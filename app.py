@@ -7,9 +7,9 @@ db = SQLAlchemy
 
 class Item(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    title = 0
-    price = 0
-    isActive = 0
+    title = db.Column(db.String(100), nullable=False)
+    price = db.Column(db.Integer, nullable=False)
+    isActive = db.Column(db.Boolean, default=True)
 
 @app.route('/')
 def index():
