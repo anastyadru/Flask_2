@@ -31,6 +31,7 @@ def create():
 
         try:
             db.session.add(item)
+            db.session.commit()
     else:
         return render_template('create.html')
 
