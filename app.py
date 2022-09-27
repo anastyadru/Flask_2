@@ -28,6 +28,9 @@ def create():
         price = request.form['price']
 
         item = Item(title=title, price=price)
+
+        try:
+            db.session.add(item)
     else:
         return render_template('create.html')
 
