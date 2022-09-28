@@ -32,6 +32,7 @@ def create():
         try:
             db.session.add(item)
             db.session.commit()
+            return redirect('/')
     else:
         return render_template('create.html')
 
