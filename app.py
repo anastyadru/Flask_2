@@ -34,7 +34,7 @@ def create():
             db.session.commit()
             return redirect('/')
         except:
-
+            return 'Произошла ошибка'
     else:
         return render_template('create.html')
 
