@@ -15,6 +15,7 @@ class Item(db.Model):
 
 @app.route('/')
 def index():
+    items = item.query.order_by
     return render_template('index.html')
 
 @app.route('/about')
