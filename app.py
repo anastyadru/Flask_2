@@ -12,7 +12,8 @@ class Item(db.Model):
     price = db.Column(db.Integer, nullable=False)
     isActive = db.Column(db.Boolean, default=True)
 
-    def
+    def__repr__(self):
+
 
 @app.route('/')
 def index():
