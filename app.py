@@ -13,7 +13,7 @@ class Item(db.Model):
     isActive = db.Column(db.Boolean, default=True)
 
     def__repr__(self):
-
+        return'Запись'
 
 @app.route('/')
 def index():
