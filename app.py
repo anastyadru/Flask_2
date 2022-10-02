@@ -11,7 +11,8 @@ class Item(db.Model):
     title = db.Column(db.String(100), nullable=False)
     price = db.Column(db.Integer, nullable=False)
     isActive = db.Column(db.Boolean, default=True)
-    text = db.Column(db.Text, nullable=False)
+
+    def
 
 @app.route('/')
 def index():
